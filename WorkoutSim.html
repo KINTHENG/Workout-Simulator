@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workout Simulator</title>
+</head>
+
+<body>
+  <h1 style="color:gold;text-align: center;background-color: red;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 2cm;">Workout Simulator</h1>
+
+  <h2>Instruction</h2>
+  <p>1.Press "Roll Dice" to get 2 numbers.</p>
+  <p>2.Choose a "Pull Exercise" from the "Compound Exercise" category by using the number you get from the first dice.</p>
+  <p>3.Choose a "Push Exercise" from the "Compound Exercise" category by using the number you get from the second dice.</p>
+  <p>4.Repeat step 1 to step 3 for "Isolation Exercise".</p>
+  <p>5.Press the link on the exercise for the information of exercise if needed.</p>
+</body>
+
+<style>
+div.dice{
+	float:left;
+	width:32px;
+	background:#F5F5F5;
+	border:#999 1px solid;
+	padding:10px;
+	font-size:24px;
+	text-align:center;
+	margin:5px;
+}
+</style>
+<script>
+function rollDice(){
+    var die1 = document.getElementById("die1");
+    var die2 = document.getElementById("die2");
+    var status = document.getElementById("status");
+    var d1 = Math.floor(Math.random() * 3) + 1;
+    var d2 = Math.floor(Math.random() * 3) + 1;
+    var diceTotal = d1 + d2;
+    die1.innerHTML = d1;
+    die2.innerHTML = d2;
+}
+</script>
+
+<body>
+<div id="die1" class="dice">0</div>
+<div id="die2" class="dice">0</div>
+<button onclick="rollDice()">Roll Dice</button>
+<h2 id="status" style="clear:left;"></h2>
+</body>
+
+<body>
+  <h2>Compound Exercise</h2>
+  <h3>Pull Exercise</h3>
+  <ol>
+    <li><a href="https://youtu.be/WSLbL7hqP4k">Pull-up</a></li>
+    <li><a href="https://youtu.be/mpaRMco0jV8">Chin-up</a></li>
+    <li><a href="https://youtu.be/rNifNDd7khU">Inverted row</a></li>
+  </ol>
+  <h3>Push Exercise</h3>
+  <ol>
+    <li><a href="https://youtu.be/0cT6ug3WVn4">Pike push-up</a></li>
+    <li><a href="https://youtu.be/ba8tr1NzwXU">Push up</a></li>
+    <li><a href="https://youtu.be/FCxl2y4nsTA">Dip</a></li>
+  </ol>
+  <h2>Isolation Exercise</h2>
+  <h3>Pull Exercise</h3>
+  <ol>
+    <li><a href="https://youtu.be/vByJfI8acOw">Inverted bicep curl</a></li>
+    <li><a href="https://youtu.be/cszJcRz5UB0">Reverse push-up</a></li>
+    <li><a href="https://youtu.be/cc6UVRS7PW4">Superman raise</a></li>
+  </ol>
+  <h3>Push Exercise</h3>
+  <ol>
+    <li><a href="https://youtu.be/rBgffVR4is4">Tricep Extension</a></li>
+    <li><a href="https://youtu.be/ZzjSbsPm85k">Bodyweight lateral raise</a></li>
+    <li><a href="https://youtu.be/sBhQxMfpuJU">Pike lift</a></li>
+  </ol>
+</body>
+<h2>Here is how your workout should be:</h2>
+<p style="text-align: center;color: red;">5 to 8 reps Compound pull exercise-Rest 90 seconds-5 to 8 reps Compound push exercise-Rest 90 seconds</p>
+<p style="text-align: center;color: red;">5 to 8 reps Compound pull exercise-Rest 90 seconds-5 to 8 reps Compound push exercise-Rest 90 seconds</p>
+<p style="text-align: center;color: red;">5 to 8 reps Compound pull exercise-Rest 90 seconds-5 to 8 reps Compound push exercise-Rest 90 seconds</p>
+<p style="text-align: center;color: red;">8 to 12 reps Isolation pull exercise-Rest 60 seconds-8 to 12 reps Isolation push exercise-Rest 60 seconds</p>
+<p style="text-align: center;color: red;">8 to 12 reps Isolation pull exercise-Rest 60 seconds-8 to 12 reps Isolation push exercise-Rest 60 seconds</p>
+<p style="text-align: center;color: red;">8 to 12 reps Isolation pull exercise-Rest 60 seconds-8 to 12 reps Isolation push exercise-Rest 60 seconds</p>
+
+<h2 style="text-align: center;"><a href="https://youtu.be/dQw4w9WgXcQ"> That's all! Remember to do your workout!:)</a></h2>
+</html>
